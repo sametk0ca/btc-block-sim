@@ -1,0 +1,8 @@
+bu program terminalden parametre olarak 2 adet .txt dosyası alır, dosyaların checksumını hesaplar ve eğer 2 dosyanın içerikleri aynı veya farklıysa bunu belirtir.
+Kullanım şekli: 
+1- ilk olarak checksum.go dosyasını " go  build checksum.go " komutunu kullanarak çalıştırılabilir bir dosyaya dönüştürün.
+2- daha sonra terminalde " ./checksum  {ilk_dosya_adı}.txt {ikinci_dosya_adı}.txt {n-bit sayısı}" şeklinde çalıştırın.
+3- çalışma sonrası bilgi mesajı ekrana gelecektir. 
+ps: n parametresi olarak verilen sayı byte cinsindendir. Örnek olarak n parametresini 8 olarak girerseniz,
+8*8 işleminden çıktı olarak toplam 64 bit göreceksiniz.Kullandığım hash fonksiyonu olan SHA-256 dolayısıyla n parametresini
+en fazla 32 olarak girebilirsiniz ( 32*8 = 256 bit).
